@@ -20,9 +20,6 @@ importers:
       autoprefixer:
         specifier: 10.6.1
         version: 10.6.1(postcss@8.5.29)
-      bcrypt:
-        specifier: ^6.0.0
-        version: 6.0.0
       clsx:
         specifier: ^2.1.1
         version: 2.1.1
@@ -51,12 +48,18 @@ importers:
         specifier: ^4.6.5
         version: 4.6.5
     devDependencies:
+      '@types/bcrypt':
+        specifier: ^6.0.0
+        version: 6.0.0
       '@types/node':
         specifier: 26.6.5
         version: 26.6.5
       '@types/react':
         specifier: 19.3.0
         version: 19.3.0
+      bcrypt:
+        specifier: ^6.0.0
+        version: 6.0.0
       typescript:
         specifier: 7.0.2
         version: 7.0.2
@@ -424,6 +427,9 @@ packages:
 
   '@tailwindcss/postcss@4.3.3':
     resolution: {integrity: sha512-JTSZZGQi1AyKirbLN3azmjVzef92tcX7h+iSqPdaeStyFpGpDlKvvpxeOE8njhbUanbRwr3z8DyzhICWnMtQeg==}
+
+  '@types/bcrypt@6.0.0':
+    resolution: {integrity: sha512-/oJGukuH3D2+D+3H4JWLaAsJ/ji86dhRidzZ/Od7H/i8g+aCmvkeCc6Ni/f9uxGLSQVCRZkX2/lqEFG2BvWtlQ==}
 
   '@types/cookie@0.6.0':
     resolution: {integrity: sha512-4Kh9a6B2bQciAhf7FSuMRRkUWecJgJu9nPnx3yzpsfXX/c50REIqpHY4C82bXP90qrLtXtkDxTZosYO3UpOwlA==}
@@ -1117,6 +1123,10 @@ snapshots:
       '@tailwindcss/oxide': 4.3.3
       postcss: 8.5.29
       tailwindcss: 4.3.3
+
+  '@types/bcrypt@6.0.0':
+    dependencies:
+      '@types/node': 26.6.5
 
   '@types/cookie@0.6.0': {}
 
