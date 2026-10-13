@@ -80,7 +80,7 @@ export default function EditInvoiceForm({
                   type="radio"
                   value="pending"
                   defaultChecked={invoice.status === 'pending'}
-                  className="h-4 w-4 cursor-pointer border-gray-300 bg-gray-100 text-gray-600 focus:ring-2"
+                  className="h-4 w-4 cursor-pointer border-gray-300 bg-gray-100 text-gray-600 checked:bg-gray-600 focus:ring-2"
                 />
                 <label
                   htmlFor="pending"
@@ -96,7 +96,7 @@ export default function EditInvoiceForm({
                   type="radio"
                   value="paid"
                   defaultChecked={invoice.status === 'paid'}
-                  className="h-4 w-4 cursor-pointer border-gray-300 bg-gray-100 text-gray-600 focus:ring-2"
+                  className="h-4 w-4 cursor-pointer border-gray-300 bg-gray-100 text-gray-600 checked:bg-gray-600 focus:ring-2"
                 />
                 <label
                   htmlFor="paid"
