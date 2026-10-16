@@ -3,7 +3,9 @@
   "scripts": {
     "build": "next build",
     "dev": "next dev --turbopack",
-    "start": "next start"
+    "start": "next start",
+    "lint": "oxlint",
+    "lint:fix": "oxlint --fix"
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",
@@ -26,6 +28,7 @@
     "@types/node": "26.6.5",
     "@types/react": "19.3.0",
     "bcrypt": "^6.0.0",
+    "oxlint": "^1.88.0",
     "typescript": "7.0.2"
   }
 }
