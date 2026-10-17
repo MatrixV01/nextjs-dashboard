@@ -130,19 +130,24 @@ export default function Form({ customers }: { customers: CustomerField[] }) {
                 </label>
               </div>
             </div>
-            <div id="status-error" aria-live="polite" aria-atomic="true">
-              {state.errors?.status &&
-                state.errors.status.map((error: string) => {
-                  console.log(error);
-                  return (
-                    <p className="mt-2 text-sm text-red-500" key={error}>
-                      {error}
-                    </p>
-                  );
-                })
-              }
-            </div>
           </div>
+          <div id="status-error" aria-live="polite" aria-atomic="true">
+            {state.errors?.status &&
+              state.errors.status.map((error: string) => {
+                console.log(error);
+                return (
+                  <p className="mt-2 text-sm text-red-500" key={error}>
+                    {error}
+                  </p>
+                );
+              })
+            }
+          </div>
+          {state.message && (
+            <p className="mt-2 text-sm text-red-500" aria-live="polite">
+              {state.message}
+            </p>
+          )}
         </fieldset>
       </div>
       <div className="mt-6 flex justify-end gap-4">
